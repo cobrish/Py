@@ -5,7 +5,7 @@ def binary_search(A, item):
         middle = len(A) // 2
         if A[middle] == item:
             return True
-       # your code goes here
+       if item<A[middle]:
         #A[:middle] is a copy of the elements of A to the left of middle
             return binary_search(A[:middle], item)
         else:
